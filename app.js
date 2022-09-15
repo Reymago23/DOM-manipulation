@@ -316,10 +316,8 @@ btn.addEventListener(
     'click',
     function (e) {
         e.stopPropagation();
-        const randomIndex = Math.ceil(Math.random() * quotes.length);
-        if (randomIndex <= quotes.length) {
-            quote.innerText = "\"" + quotes[randomIndex].quote + "\"";
-            author.innerText = quotes[randomIndex].author;
-        }
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        quote.innerText = "\"" + quotes[randomIndex].quote + "\"";
+        author.innerText = quotes[randomIndex].author;
     }
 )
