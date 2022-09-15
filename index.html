@@ -6,16 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300&family=Roboto&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Styling elements</title>
+    <title>Challange 1</title>
 </head>
 
-<body class=" flex w-screen h-screen justify-center items-center bg-slate-700">
+<body class=" flex flex-col gap-3 w-screen h-screen justify-center items-center bg-[url('/img/bg-books.jpg')]">
 
-    <div class="kontainer border-white border-2 p-6 rounded-lg">
-        <h1 id="main-heading" class="text-white text-3xl font-bold mb-3">Hello</h1>
-
+    <h2 class="text-white bg-slate-800 border font-bold px-3 rounded-sm">Javascript Quote Generator</h2>
+    <div class="kontainer bg-white p-4 rounded-lg w-2/5 text-center">
+        <div>
+            <div>
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore maiores amet dolorum praesentium
+                    blanditiis iure consectetur quos! Quasi quo cum dolor voluptatem!
+                </span>
+            </div>
+            <div class="text-red-700 uppercase my-3">
+                Lorem, ipsum.
+            </div>
+            <div>
+                <button id="new-quote" class="text-sm bg-slate-800 text-white px-2 py-1 rounded-md">New Quote</button>
+            </div>
+        </div>
     </div>
+    <script>
+        feather.replace()
+    </script>
     <script src="app.js"></script>
 </body>
 
