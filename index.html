@@ -13,21 +13,37 @@
         rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="app.css">
-    <title>Challange 2</title>
+    <!-- <link rel="stylesheet" href="app.css"> -->
+    <title>Challange 3</title>
 </head>
 
-<body class="w-screen h-screen relative bg-[url('/img/bg-leaves.jpg')] bg-no-repeat bg-cover">
+<body class="w-screen h-screen flex bg-[url('/img/bg-question.jpg')] bg-no-repeat bg-cover items-center justify-center">
 
-    <button id="open-btn"
-        class="text-white absolute left-10 bottom-1/4 border-2 py-2 px-3 rounded-md  text-lg hover:bg-slate-100 hover:text-slate-700 transition duration-500">
-        <p>Where's Our Modal?</p>
-    </button>
-    <div id="modal-container" class="fixed top-0 left-0 w-full h-full z-[1] hidden bg-modal ">
-        <div id=" modal"
-            class="bg-white w-40 h-40 flex justify-between p-4 absolute items-center rounded-md left-1/2 top-1/2 transform translate-x-[50%]">
-            <p class=" text-center">Here I am!</p>
-            <div id="close-btn" class="text-3xl text-red-700 hover:font-bold transition duration-500">&times;</div>
+    <div class="accordion w-2/4  bg-white rounded-2xl p-4">
+        <h2 class="text-xl font-semibold mb-3">Frequently Asked Questions</h2>
+        <div class="content-container relative">
+            <div class="question after:absolute after:content-['+'] after:right-0 border-b border-black py-2">What is
+                the
+                return policy?
+            </div>
+            <div class="answer">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias maxime eum adipisci magni ipsa
+                repellendus provident aut, aperiam voluptatum, incidunt vel tenetur iste ipsum deserunt?
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="question">What is the return policy?</div>
+            <div class="answer">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias maxime eum adipisci magni ipsa
+                repellendus provident aut, aperiam voluptatum, incidunt vel tenetur iste ipsum deserunt?
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="question">What is the return policy?</div>
+            <div class="answer">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias maxime eum adipisci magni ipsa
+                repellendus provident aut, aperiam voluptatum, incidunt vel tenetur iste ipsum deserunt?
+            </div>
         </div>
     </div>
     <script>
