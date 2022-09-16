@@ -1,0 +1,16 @@
+@keyframes animatemodal {
+    from {
+        top: -33.33%;
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+#modal {
+    animation-name: animatemodal;
+    animation-duration: 0.6s;
+}
